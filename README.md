@@ -10,8 +10,8 @@ This file selects, cleans, joins data of different files from different sources.
 
 ## Drink vs Smoke correlation
 
-Detail of the project is in the url:
+Detail of the project is in the url: https://htmlpreview.github.io/?https://github.com/arindam-mazumdar/arindam-mazumdar.github.io/blob/master/smoke_drink_corr.html
 
 ## Best Classifier for predicting risk of heart disease
 
-Detals of the project is in the url: 
+Detals of the project is in the url: https://htmlpreview.github.io/?https://github.com/arindam-mazumdar/arindam-mazumdar.github.io/blob/master/BRFSS_des.html
