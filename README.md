@@ -10,4 +10,8 @@ This file selects, cleans, joins data of different files from different sources.
 
 ## Drink vs Smoke correlation
 
-Detail of the project is the url:
+Detail of the project is in the url:
+
+## Best Classifier for predicting risk of heart disease
+
+Detals of the project is in the url: 
