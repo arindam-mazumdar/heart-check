@@ -18,6 +18,7 @@ That there are some sleeping hours which are above 70 hrs. These data points are
 The analysis and visualizations of data are in "**analysis_and_visualization.ipynb**" notebook. The data shows clear trend of varying probablility of heart-disease with different features. For instance, in the following bar-plot we see the consistent increase in heart-disease probability with age:
 
 ![Age -vs- Heart Disease proability](https://github.com/arindam-mazumdar/heart-check/blob/main/age.png)
+
 ( age : 18-99 years are divided in 13 groups. To see exact groups follow the flask app: https://heart-check-cdc.herokuapp.com/)
 
 ## Model
@@ -30,5 +31,7 @@ For the purpose of finding out most important factor we use the conditional inde
 
 
 ## Heart-Check App:
+The falsk_app folder contains necessary files for creating the app. The NaiveBayes model and the factor's conditional probability is calculated in "**model.py**" file within the folder. 
+
 Please refer to app webpage: https://heart-check-cdc.herokuapp.com/
 Calculate your own risk.
