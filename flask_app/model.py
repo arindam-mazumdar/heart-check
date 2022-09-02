@@ -4,7 +4,7 @@ import pickle
 
 
 from sklearn.naive_bayes import MultinomialNB
-
+from sklearn.naive_bayes import CategoricalNB
 
 path = '/home/arindam/codes/BRFS/LLCP2020ASC/'
 df = pd.read_csv(path+'wrangled_data.csv')
@@ -25,6 +25,7 @@ df=df[['_SEX','_AGEG5YR','_HCVU651','DIABETE4','_TOTINDA','_RFDRHV7','SLEPTIM1',
 X = np.array(df[['_SEX','_AGEG5YR','_HCVU651','DIABETE4','_TOTINDA','_RFDRHV7','SLEPTIM1','SMOKE']])
 y = np.array(df['MICHD'])
 clf = MultinomialNB()
+#clf = CategoricalNB()
 clf.fit(X, y)
 
 
@@ -100,7 +101,7 @@ fac_dict['todo'] = dict(zip(todo_list,factor_list))
 factor_list = []
 for i, hcov in enumerate(hcov_list):
     hcov_num = i+1
-    df[(df['_HCVU651']== hcov_num)]
+    newdf = df[(df['_HCVU651']== hcov_num)]
     factor_list.append((sum(newdf['MICHD'])/len(newdf['MICHD']))*100.)
 fac_dict['hcov'] = dict(zip(hcov_list,factor_list))
 factor_list = []
